@@ -4,11 +4,11 @@ DevStack is a responsive React-based web-app where someone can learn about vario
 
 ## Live Site
 
-Coming soon...
+https://dev-stack-eight.vercel.app
 
 ## GitHub Repository
 
-Coming soon...
+https://github.com/iamminhaz31/dev-stack
 
 ## Technologies Used
 
