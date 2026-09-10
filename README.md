@@ -22,7 +22,7 @@ https://github.com/iamminhaz31/dev-stack
 
 ## Features
 
-Users have the opportunity to learn about new frontend, backend, database, language, styling and DevOps technologies.
+1. Users have the opportunity to learn about new frontend, backend, database, language, styling and DevOps technologies.
 
 2. Technology can be added to the user's stack and individual technology can be removed, as well as the entire stack being cleared.
 
