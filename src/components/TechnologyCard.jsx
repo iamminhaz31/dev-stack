@@ -29,16 +29,20 @@ const TechnologyCard = ({
 
   return (
     <div
-      className={`flex h-full flex-col rounded-xl bg-white p-3.5 transition-all duration-200 sm:p-4 ${
+      className={`group flex h-full flex-col rounded-xl bg-white p-3.5
+      transition-all duration-300 ease-in-out
+      hover:-translate-y-2 hover:scale-[1.02] hover:shadow-xl
+      sm:p-4
+      ${
         isAdded
-          ? "border-2 border-purple-500 shadow-md ring-2 ring-purple-100"
-          : "border border-slate-200 shadow-sm hover:shadow-md"
+          ? "border-2 border-purple-500 shadow-md ring-2 ring-purple-100 hover:ring-purple-200"
+          : "border border-slate-200 shadow-sm hover:border-purple-300"
       }`}
     >
-      {/* Top */}
+      {/* Top Section */}
       <div className="flex items-start justify-between gap-3">
         <div className="flex items-center gap-2">
-          <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-slate-50">
+          <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-slate-50 transition-transform duration-300 group-hover:scale-110">
             <img
               src={icon}
               alt={name}
@@ -84,14 +88,16 @@ const TechnologyCard = ({
         </span>
       </div>
 
-      {/* Button */}
+      {/* Add Button */}
       <button
         onClick={() => handleAddToStack(technology)}
         disabled={isAdded}
-        className={`mt-3 w-full rounded-md py-2 text-[9px] font-semibold transition sm:text-[10px] ${
+        className={`mt-3 w-full rounded-md py-2 text-[9px] font-semibold
+        transition-all duration-300 sm:text-[10px]
+        ${
           isAdded
             ? "bg-slate-200 text-slate-500"
-            : "bg-slate-950 text-white hover:bg-slate-800"
+            : "bg-slate-950 text-white hover:bg-purple-600 hover:shadow-md"
         }`}
       >
         {isAdded ? "✓ Added to Stack" : "Add to Stack"}
